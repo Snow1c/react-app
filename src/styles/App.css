@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.842);
+}
+
+#root {
+  display: flex;
+  justify-content: center ;
+}
+
+.App {
+  width: 70%;
+  position: relative;
+}
+
+.post {
+  color: rgba(255, 255, 255, 0.589);
+  /* position: relative; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid rgb(138, 138, 138);
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.post-list {
+  border:rgb(138, 138, 138) solid 1px;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 0 20px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0);
+}
+
+.post-list:not(:first-child) {
+  margin-top: 30px;
+}
+
+form {
+  padding: 15px;
+  border:rgba(143, 0, 79, 0.747) solid 1px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(143, 0, 79, 0.747), 0 0 20px rgba(143, 0, 79, 0.747);
+  background-color: rgba(0, 0, 0, 0.548);
+  /* position: relative; */
+  /* overflow: hidden; */
+  /* clear: both; */
+}
+
+form h1 {
+  color: rgba(255, 255, 255, 0.589);
+  margin-bottom: 10px;
+}
+
+form button {
+  /* right: 15px; */
+  float: right;
+  /* position: absolute;
+  right: 0;
+  top: 150px; */
+  /* right: 0; */
+}
+
+.clearfix:after {
+  content: "."; /* добавить содержимое: "." */
+  display: block;  /* сделать блоком, т.к. inline не может иметь clear */
+  clear: both;  /* с обеих сторон clear */
+  visibility: hidden; /* сделать невидимым, зачем нам точка внизу? */
+  height: 0;  /* сделать высоту 0, чтобы не занимал место */
+}
+
+.no-posts {
+  margin-top: 50px;
+  padding: 15px;
+  color: rgba(255, 255, 255, 0.589);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0);
+  border:rgb(138, 138, 138) solid 1px;
+}
+
+.add-post-title {
+  font-size: 20px;
+}

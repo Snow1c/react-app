@@ -1,0 +1,15 @@
+.listTitle {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.589);
+}
+
+.postsControl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.noPosts {
+  color: rgba(255, 255, 255, 0.589);
+  text-align: center;
+}

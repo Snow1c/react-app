@@ -1,0 +1,25 @@
+.myBtn {
+  min-width: 100px;
+  margin-top: 10px;
+  padding: 5px 15px;
+  color: rgba(255, 255, 255, 0.589);
+  font-size: 14px;
+  background: transparent;
+  border-radius: 10px;
+  border: 1px solid rgb(138, 138, 138);
+  outline: none;
+  transition: box-shadow .2s ease;
+}
+
+.myBtn:active {
+  /* background: rgba(255, 255, 255, 0.589); */
+  color: rgb(255, 81, 177);
+}
+
+.myBtn:focus {
+  border-color: rgb(221, 221, 221);
+}
+
+.myBtn:hover {
+  box-shadow: 0 0 20px rgba(143, 0, 79, 0.747), 0 0 20px rgba(143, 0, 79, 0.747);
+}

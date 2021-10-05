@@ -1,0 +1,11 @@
+.MySelect {
+  background-color: inherit;
+  color: rgba(255, 255, 255, 0.589);
+  outline: none;
+  /* max-height: 20px; */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 3px 5px;
+  border-radius: 10px;
+}
