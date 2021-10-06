@@ -28,6 +28,13 @@ body {
   border: 1px solid rgb(138, 138, 138);
   margin-top: 15px;
   border-radius: 10px;
+
+  transition: opacity .3s;
+}
+
+.post.delete {
+  /* margin-left: -250px; */
+  opacity: 0%;
 }
 
 .post-list {
