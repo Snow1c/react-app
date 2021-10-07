@@ -1,8 +1,9 @@
-import React, {createRef, useRef} from 'react'
+import React, {createRef, useRef, useEffect} from 'react'
 import MyButton from './UI/button/MyButton'
 
 export default function PostItem(props) {
   const ref = useRef()
+  
   return (
     <div ref={ref} className="post">
       <div className="post__content">
@@ -12,6 +13,9 @@ export default function PostItem(props) {
         </div>
       </div>
       <div className="post__btns">
+        {/* <div>
+          {props.post.date}
+        </div> */}
         <MyButton onClick={() => {
           ref.current.classList.toggle('delete')
           // Для анимации

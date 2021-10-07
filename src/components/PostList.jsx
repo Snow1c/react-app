@@ -11,9 +11,7 @@ export default function PostList({ posts, title, ...props }) {
 
   const sortedPosts = useMemo(() => {
     if (selectedSort) {
-      return [...posts].sort((a, b) => {
-        return a[selectedSort].localeCompare(b[selectedSort])
-      })
+      return [...posts].sort((a, b) => a[selectedSort].localeCompare(b[selectedSort]))
     }
     return posts
   }, [selectedSort, posts])

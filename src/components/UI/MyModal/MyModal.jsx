@@ -9,14 +9,10 @@ export default function MyModal({ children, visible, setVisible }) {
     rootClasses.push(classes.active)
   }
 
-  const kDown = (e) => {
-    console.log(e)
-  }
-
   return (
-    <div className={rootClasses.join(' ')} onKeyDown={kDown} onClick={(e) => setVisible(false)}>
+    <div className={rootClasses.join(' ')} onClick={(e) => setVisible(false)}>
       {/* <div className={classes.myModal}> */}
-      <div className={classes.myModalContent} onKeyDown={kDown} onClick={(e) => e.stopPropagation()}>
+      <div className={classes.myModalContent} onClick={(e) => e.stopPropagation()}>
         {children}
       </div>
     </div>
