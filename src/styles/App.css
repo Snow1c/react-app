@@ -41,12 +41,20 @@ body {
   border:rgb(138, 138, 138) solid 1px;
   padding: 15px;
   border-radius: 10px;
-  margin-top: 10px;
+  margin: 20px 0;
   box-shadow: 0 0 20px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0);
 }
 
 .post-list:not(:first-child) {
   margin-top: 30px;
+}
+
+.post__btns {
+  margin-left: 10px;
+}
+
+.post__btns button {
+  margin: 0;
 }
 
 form {

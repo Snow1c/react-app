@@ -9,6 +9,7 @@ import Loader from './components/UI/loader/Loader';
 
 function App() {
   const [posts, setPosts] = useState([])
+  const [totalCount, setTotalCount] = useState(0 )
 
   useEffect(() => {
     fetchPosts()
@@ -23,8 +24,9 @@ function App() {
   const [modal, setModal] = useState(false)
 
   async function fetchPosts() {
-    const response = await axios.get("https://jsonplaceholder.typicode.com/posts")
+    const response = await axios.get("https://jsonplaceholder.typicode.com/posts?_limit=10")
     setPosts(response.data)
+    console.log(response)
   }
 
   // Получение поста из дочернего документа
