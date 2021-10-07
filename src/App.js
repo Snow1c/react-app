@@ -38,14 +38,6 @@ function App() {
     setPosts(posts.filter(p => p.id !== post.id))
   }
 
-  const sortPosts = (sortedPosts) => {
-    setPosts(sortedPosts)
-  }
-
-  const filterPosts = (filteredPosts) => {
-    setPosts(filteredPosts)
-  }
-
   if (posts.length !== 0) {
     return (
       <div className="App">
@@ -56,7 +48,7 @@ function App() {
 
         {/* <PostList filter={filterPosts} remove={removePost} posts={posts} sort={sortPosts} title={"Список постов"} /> */}
         {posts.length !== 0
-          ? <PostList filter={filterPosts} remove={removePost} posts={posts} sort={sortPosts} title={"Список постов"} />
+          ? <PostList remove={removePost} posts={posts} title={"Список постов"} />
           : <h1 classN  ame="no-posts">Посты не найдены</h1>
           // : <Loader />
         }
